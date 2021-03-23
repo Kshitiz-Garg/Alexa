@@ -12,6 +12,7 @@ import random
 import operator
 import json
 
+
 import winshell as winshell
 import wolframalpha
 import time
@@ -93,7 +94,7 @@ def sendEmail(to, content):
 
 def screenshot():
     img = pyautogui.screenshot()
-    img.save('F:\css\screen.png')
+    img.save('E:\screenshot\screen.png')
 
 
 def cpu():
@@ -185,7 +186,7 @@ if __name__ == '__main__':
             word = r'Word path'
             os.startfile(word)
 
-        elif 'what is love' and 'tell me about love' in query:
+        elif 'tell me about love' in query:
             speak("It is 7th sense that destroy all other senses , "
                   "And I think it is just a mere illusion , "
                   "It is wastage of time")
@@ -327,9 +328,9 @@ if __name__ == '__main__':
             cpu()
         elif 'joke' in query:
             jokes()
-        elif 'tell me about yourself' and 'who are you' in query:
+        elif 'who are you' in query:
             Introduction()
-        elif 'tell me about SID' and 'creator' in query:
+        elif 'creator' in query:
             Creator()
 
         # show location on map
